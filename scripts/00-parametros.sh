@@ -189,10 +189,10 @@ PORTDHCP="67"
 DOMAIN=$DOMINIOSERVER
 #
 # Variável do nome da Pesquisa Reversa do Servidor de DNS
-DOMAINREV="1.16.172.in-addr.arpa"
+DOMAINREV="1.168.192.in-addr.arpa"
 #
 # Variável do endereço IPv4 da Subrede do Servidor de DNS
-NETWORK="172.16.1."
+NETWORK="192.168.1."
 #
 # Variável de instalação do serviço de rede Bind DNS Server
 DNSINSTALL="bind9 bind9utils bind9-doc dnsutils net-tools"
@@ -221,10 +221,10 @@ PORTRNDC="953"
 # 
 # Variável da senha em modo texto que está configurada nos arquivos: dhcpd.conf, named.conf.local
 # e rndc.key que será substituída pela nova chave criptografada da variável: USERUPDATE
-SECRETUPDATE="vaamonde"
+SECRETUPDATE="salvador"
 #
 # Variável da senha utilizada na criação da chave de atualização dos ponteiros do DNS e DHCP
-USERUPDATE="vaamonde"
+USERUPDATE="salvador"
 #
 # Variável das dependências do laço de loop da integração do Bind DNS e do ISC DHCP Server
 DHCPDNSDEP="isc-dhcp-server bind9"
@@ -581,7 +581,7 @@ CREATE_TABLE_JAVAEE="CREATE TABLE contatos (
 # Variáveis utilizadas na geração das chaves privadas/públicas dos certificados do OpenSSL
 #
 # Variável da senha utilizada na geração das chaves privadas/públicas da CA e dos certificados
-PASSPHRASE="vaamonde"
+PASSPHRASE="salvador"
 #
 # Variável do tipo de criptografia da chave privada com as opções de: -aes128, -aes192, -aes256, 
 # -camellia128, -camellia192, -camellia256, -des, -des3 ou -idea, padrão utilizado: -aes256
