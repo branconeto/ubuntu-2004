@@ -56,10 +56,10 @@
 # Gerando os pares de chaves Pública/Privadas utilizando o GNU/Linux
 # Linux Mint Terminal: Ctrl+Alt+T
 #	ssh-keygen
-#		Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): /home/vaamonde/.ssh/vaamonde <Enter>
+#		Enter file in which to save the key (/home/salvador/.ssh/id_rsa): /home/salvador/.ssh/salvador <Enter>
 #		Enter passphrase (empty for no passphrase): <Enter>
 #		Enter same passphrase again: <Enter>
-#	ssh-copy-id vaamonde@172.16.1.20
+#	ssh-copy-id salvador@ssh.sbn.local
 #
 # Importando os pares de chaves Públicas/Privadas utilizando o Powershell
 # Windows Powershell: Menu, Powershell 
