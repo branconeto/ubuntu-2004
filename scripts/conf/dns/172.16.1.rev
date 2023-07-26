@@ -37,6 +37,6 @@ $TTL 3600 ; 1 hour
 @		IN		NS		sbnsa01ws01.sbn.local.
 @		IN		MX		10 mail.sbn.local.
 ;
-20		IN		PTR		sbnsa01ws01.sbn.local.
+254		IN		PTR		sbnsa01ws01.sbn.local.
 1		IN		PTR		sbnsa01fw01.sbn.local.
 
