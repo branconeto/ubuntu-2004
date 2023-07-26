@@ -170,7 +170,7 @@ PORTDHCP="67"
 # 08. /etc/bind/named.conf.default-zones = arquivo de configuração das Zonas Padrão do Bind9
 # 09. /etc/bind/rndc.key = arquivo de configuração das Chaves RNDC de integração Bind9 e DHCP
 # 10. /var/lib/bind/pti.intra.hosts = arquivo de configuração da Zona de Pesquisa Direta
-# 11. /var/lib/bind/172.16.1.rev = arquivo de configuração da Zona de Pesquisa Reversas
+# 11. /var/lib/bind/192.168.1.rev = arquivo de configuração da Zona de Pesquisa Reversas
 # 12. /etc/default/named = arquivo de configuração do Daemon do Serviço do Bind9
 # 13. /etc/cron.d/dnsupdate-cron = arquivo de configuração das atualizações de Ponteiros
 # 14. /etc/cron.d/rndcupdate-cron = arquivo de configuração das atualizações das Estatísticas
@@ -213,8 +213,8 @@ PORTRNDC="953"
 #
 # Arquivos de monitoramento (log) dos Serviços de Rede Bind9 e do DHCP utilizados nesse script
 # 01. dhcp-lease-list = comando utilizado para mostrar os leases dos endereços IPv4 do ISC DHCP
-# 02. less /var/lib/bind/pti.intra.hosts = arquivo de configuração da Zona de Pesquisa Direta
-# 03. less /var/lib/bind/172.16.1.rev = arquivo de configuração da Zona de Pesquisa Reversas
+# 02. less /var/lib/bind/sbn.local.hosts = arquivo de configuração da Zona de Pesquisa Direta
+# 03. less /var/lib/bind/192.168.1.rev = arquivo de configuração da Zona de Pesquisa Reversas
 #
 # Declarando a variável de geração da chave de atualização dos registros do Bind DNS Server 
 # integrado no ISC DHCP Server

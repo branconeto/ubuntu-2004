@@ -14,19 +14,19 @@
 // Configuração da chave de autenticação entre Bind9 DNS Server e o ISC DHCP Server
 // Nas versões anteriores do BIND <9.13, os algoritmos HMAC podiam ser gerados para 
 // uso com chaves TSIG utilizando o comando: dnssec-keygen -r /dev/urandom -a HMAC-MD5 
-// -b 128 -n USER vaamonde, esse recurso foi removido a partir do BIND >9.13, nesse 
-// cenário é recomendado utilizar o comando: tsig-keygen -a hmac-md5 vaamonde > tsig.key 
+// -b 128 -n USER salvador, esse recurso foi removido a partir do BIND >9.13, nesse 
+// cenário é recomendado utilizar o comando: tsig-keygen -a hmac-md5 salvador > tsig.key 
 // para gerar chaves TSIG de integração do DNS e DHCP.
 // Mais informações veja o script: 04-dhcpdns.sh (Integração do ISC DHCP e Bind9 DNS Server)
 key "rndc-key" {
 	algorithm hmac-md5;
-	secret "vaamonde";
+	secret "salvador";
 };
 
 // Configuração de Zona de Pesquisa Direta do Bind9 DNS Server
-zone "pti.intra" IN {
+zone "sbn.local" IN {
 	type master;
-	file "/var/lib/bind/pti.intra.hosts";
+	file "/var/lib/bind/sbn.local.hosts";
 	allow-update { key rndc-key; };
 	allow-query { any; };
 	allow-transfer { none; };
@@ -35,9 +35,9 @@ zone "pti.intra" IN {
 };
 
 // Configuração da Zona de Pesquisa Reversa do Bind9 DNS Server
-zone "1.16.172.in-addr.arpa" IN {
+zone "1.168.192.in-addr.arpa" IN {
 	type master;
-	file "/var/lib/bind/172.16.1.rev";
+	file "/var/lib/bind/192.168.1.rev";
 	allow-update { key rndc-key; };
 	allow-query { any; };
 	allow-transfer { none; };

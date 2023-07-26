@@ -30,20 +30,20 @@
 #
 # Testando o DNS no GNU/Linux ou Microsoft Windows
 # Linux Mint Terminal: Ctrl+Alt+T 
-#	nslookup pti.intra (query Internet name servers interactively)
-#	dig pti.intra (DNS lookup utility)
-#	host pti.intra (DNS lookup utility)
-#	ping pti.intra (send ICMP ECHO_REQUEST to network hosts)
+#	nslookup sbn.local (query Internet name servers interactively)
+#	dig sbn.local (DNS lookup utility)
+#	host sbn.local (DNS lookup utility)
+#	ping sbn.local (send ICMP ECHO_REQUEST to network hosts)
 #
 # Windows Powershell.: 
-#	nslookup pti.intra
-#	nslookup 172.16.1.20
-#	nslookup ptispo01ws01
-#	nslookup ptispo01ws01.pti.intra
+#	nslookup sbn.local
+#	nslookup 192.168.1.254
+#	nslookup sbnsa01ws01
+#	nslookup sbnsa01ws01.sbn.local
 #	ipconfig /displaydns
-#	ping pti.intra
-#	Resolve-DnsName pti.intra
-#	Test-Connection pti.intra
+#	ping sbn.local
+#	Resolve-DnsName sbn.local
+#	Test-Connection sbn.local
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh
