@@ -37,19 +37,19 @@
 # Linux Mint Terminal: Ctrl+Alt+T
 # 	sudo NetworkManager --print-config (network management daemon)
 # 	sudo nmcli device status (command-line tool for controlling NetworkManager)
-# 	sudo nmcli device show enp0s3 (command-line tool for controlling NetworkManager)
-# 	sudo networkctl status enp0s3 Query the status of network links)
-# 	sudo ifconfig enp0s3 (configure a network interface)
-# 	sudo ip address show enp0s3 (show / manipulate routing, network devices, interfaces and tunnels)
+# 	sudo nmcli device show ens18 (command-line tool for controlling NetworkManager)
+# 	sudo networkctl status ens18 Query the status of network links)
+# 	sudo ifconfig ens18 (configure a network interface)
+# 	sudo ip address show ens18 (show / manipulate routing, network devices, interfaces and tunnels)
 # 	sudo route -n (show/manipulate IP routing table)
 # 	sudo systemd-resolve --status (Resolve domain names, IPV4 and IPv6 addresses, DNS resource records, and services)
-# 	sudo dhclient -r enp0s3 (Dynamic Host Configuration Protocol Client)
-# 	sudo dhclient enp0s3 (Dynamic Host Configuration Protocol Client)
+# 	sudo dhclient -r enps18 (Dynamic Host Configuration Protocol Client)
+# 	sudo dhclient ens18 (Dynamic Host Configuration Protocol Client)
 # 	sudo cat /var/lib/dhcp/dhclient.leases (DHCP client lease database)
-#	nslookup pti.intra (query Internet name servers interactively)
-#	dig pti.intra (DNS lookup utility)
-#	host pti.intra (DNS lookup utility)
-#	ping pti.intra (send ICMP ECHO_REQUEST to network hosts)
+#	nslookup sbn.local (query Internet name servers interactively)
+#	dig sbn.local (DNS lookup utility)
+#	host sbn.local (DNS lookup utility)
+#	ping sbn.local (send ICMP ECHO_REQUEST to network hosts)
 #
 # Windows Powershell: 
 #	ipconfig /all
@@ -61,8 +61,8 @@
 #	nslookup pti.intra
 #	ipconfig /displaydns
 #	ping pti.intra
-#	Resolve-DnsName pti.intra
-#	Test-Connection pti.intra
+#	Resolve-DnsName sbn.local
+#	Test-Connection sbn.local
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh
