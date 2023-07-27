@@ -26,5 +26,5 @@ ALL: ALL: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Po
 # Negando uma subrede ou nome de domínio FQDN para um serviço
 #sshd: 192.168.1. : spawn /bin/echo "$(date) Conexão Recusada - SSH - IP %a" >> /var/log/tcpwrappers-deny.log
 #sshd: 192.168.1.0/255.255.255.0: spawn /bin/echo "$(date) Conexão Recusada - SSH - IP %a" >> /var/log/tcpwrappers-deny.logg
-#sshd: *.pti.intra: spawn /bin/echo "$(date) Conexão Recusada - SSH - IP %a" >> /var/log/tcpwrappers-deny.log
+#sshd: *.sbn.local: spawn /bin/echo "$(date) Conexão Recusada - SSH - IP %a" >> /var/log/tcpwrappers-deny.log
 #sshd: 192.168.1. EXCEPT 192.168.1.11: spawn /bin/echo "$(date) Conexão Recusada - SSH - IP %a" >> /var/log/tcpwrappers-deny.log
