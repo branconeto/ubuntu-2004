@@ -54,7 +54,7 @@ USUARIODEFAULT="salvador"
 #
 # Variável da Senha padrão utilizado no Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
-SENHADEFAULT="pti@2023"
+SENHADEFAULT="Pa$$w0rd"
 #
 # Variável do Nome (Hostname) do Servidor Ubuntu desse curso
 NOMESERVER="sbnsa01ws01"
