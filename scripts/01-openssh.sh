@@ -32,12 +32,12 @@
 # Acesso remoto utilizando o GNU/Linux ou Microsoft Windows
 #
 # Linux Mint Terminal: Ctrl+Alt+T
-# 	ssh vaamonde@172.16.1.20
-#	ssh vaamonde@ssh.pti.intra
+# 	ssh salvador@192.168.1.254
+#	ssh salvador@ssh.sbn.local
 #
 # Windows Powershell: Menu, Powershell 
-#	ssh vaamonde@172.16.1.20
-#	ssh vaamonde@ssh.pti.intra
+#	ssh salvador@192.168.1.254
+#	ssh salvador@ssh.sbn.local
 #
 # Linux Mint ou Windows:
 #	apt install putty putty-tools
@@ -69,7 +69,7 @@
 #		Start-Service ssh-agent <Enter>
 #
 #	Segunda etapa: Powershell do perfil do usuário sem ser como administrador
-#		ssh-add .\vaamonde <Enter>
+#		ssh-add .\salvador <Enter>
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh
