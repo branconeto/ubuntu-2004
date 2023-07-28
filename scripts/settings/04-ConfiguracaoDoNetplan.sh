@@ -102,7 +102,7 @@ network:
 			addresses: [192.168.1.254/24]
 			gateway4: 192.168.1.1
 			nameservers:
-				addresses: [192.168.1.1, 8.8.8.8, 8.8.4.4]
+				addresses: [192.168.1.1]
 				search: [sbn.local]
 	version: 2
 #

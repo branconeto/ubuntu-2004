@@ -37,12 +37,12 @@ network:
         addresses:
         #- 192.168.1.254
         - 192.168.1.1
-        #- 192.168.1.200
-        #- 192.168.1.200
+        #- 192.168.1.1
+        #- 192.168.1.1
         #
         # Configuração do Nome de Pesquisa DNS do Ubuntu Server
         search:
-        - sbn.loca
+        - sbn.local
         #
   # Configuração da versão do Protocolo Ethernet do Ubuntu Server
   version: 2
